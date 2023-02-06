@@ -23,8 +23,35 @@
     font-display: swap;
 }
 
-h1, h2, h3, a {
+@font-face {
+    font-family: 'AvantGarde-Book';
+    src: url('../fonts/AvantGarde-Book.eot');
+    src: url('../fonts/AvantGarde-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvantGarde-Book.woff2') format('woff2'),
+        url('../fonts/AvantGarde-Book.woff') format('woff'),
+        url('../fonts/AvantGarde-Book.ttf') format('truetype'),
+        url('../fonts/AvantGarde-Book.svg#AvantGarde-Book') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, a {
     text-transform: uppercase;
+    font-family: ITC Avant Garde Gothic Std;
+    font-weight: bold;
+}
+
+a {
+    text-transform: uppercase;    
+}
+
+body {
+    font-family: AvantGarde-Book;
+    color: #494949;
+    font-size: 20px;
+    line-height:30px; 
+    
 }
 :root{
 	--primary-color:#15263e; 
@@ -43,7 +70,7 @@ h1, h2, h3, a {
 .header-area{
 	background-color: var(--primary-color);
 }
-.john-btn-primary{
+.john-gradient{
     background-image: -moz-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
     background-image: -webkit-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
     background-image: -ms-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
@@ -83,6 +110,7 @@ john-banner-area
     background-image: url(../img/header-pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* -----------------------------------------------------
@@ -98,7 +126,7 @@ gra not working
 }
 
 /* -----------------------------------------------------
-gra not working 
+                                        gra not working 
 --------------------------------------------------------*/
 
 
@@ -108,7 +136,7 @@ gra not working
 }
 
 .john-banner-content h3 {    
-    letter-spacing: 10px;    
+    letter-spacing: 10px;
 }
 
 .john-banner-content p {    
@@ -118,10 +146,16 @@ gra not working
 
 
 
+/* -----------------------------------------------------
+john-about-area 
+--------------------------------------------------------*/
 
-.john-section-heading {
-  text-align: center;
+.john-about-left h4 {
+    color: var(--color1);
 }
-.john-portfolio-content {
-    text-align: center;
+
+.john-about-center img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 9px 0px 25px black;
 }
