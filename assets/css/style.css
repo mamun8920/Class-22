@@ -22,15 +22,102 @@
     font-style: normal;
     font-display: swap;
 }
-:root{
-	--primary-color:#15263e;
+
+h1, h2, h3, a {
+    text-transform: uppercase;
 }
+:root{
+	--primary-color:#15263e; 
+	--color1:#a21afe; 
+	--color2:#ff0072; 
+}
+
+.john-gra {
+    background-image: -moz-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
+    background-image: -webkit-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
+    background-image: -ms-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
 .header-area{
 	background-color: var(--primary-color);
 }
 .john-btn-primary{
-
+    background-image: -moz-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
+    background-image: -webkit-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
+    background-image: -ms-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
 }
+
+/* -----------------------------------------------------
+header-area
+--------------------------------------------------------*/
+
+.primary-menu ul{
+    align-items: center;
+}
+.primary-menu ul li a {
+    font-family: 'ITC Avant Garde Gothic Std';
+    font-size: 13px;
+    margin-right:10px;
+}
+
+.primary-menu ul li a::before {
+    content: '-';
+    margin-right:10px;
+}
+
+.primary-menu ul li:first-child a::before, .primary-menu ul ul li a::before {
+    display: none;
+}
+
+/* -----------------------------------------------------
+john-banner-area 
+--------------------------------------------------------*/
+
+.john-banner-content {
+    font-family: 'ITC Avant Garde Gothic';
+}
+
+.john-banner-area {
+    background-image: url(../img/header-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -----------------------------------------------------
+gra not working 
+--------------------------------------------------------*/
+
+.john-name {    
+    font-size: 154px;
+
+    /* background: linear-gradient(to right, var(--color1) 0% var(--color2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   */
+}
+
+/* -----------------------------------------------------
+gra not working 
+--------------------------------------------------------*/
+
+
+.john-banner-content h2 {    
+    font-size: 100px;
+    letter-spacing: 50px;
+}
+
+.john-banner-content h3 {    
+    letter-spacing: 10px;    
+}
+
+.john-banner-content p {    
+    letter-spacing: 4px;    
+}
+
+
+
+
 
 .john-section-heading {
   text-align: center;
