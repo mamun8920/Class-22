@@ -159,3 +159,11 @@ john-about-area
     height: auto;
     box-shadow: 9px 0px 25px black;
 }
+
+/* -----------------------------------------------------
+john-contact-info-area 
+--------------------------------------------------------*/
+
+.john-single-contact-img i {
+    background-color: var(--primary-color);
+}
