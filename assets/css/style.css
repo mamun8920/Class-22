@@ -76,6 +76,13 @@ body {
     background-image: -ms-linear-gradient( 49deg, rgb(219,219,219) 0%, rgb(41,10,89) 0%, rgb(162,26,240) 0%, rgb(255,0,114) 100%);
 }
 
+
+i {
+    width: 75px;
+    height: 75px;
+}
+
+
 /* -----------------------------------------------------
 header-area
 --------------------------------------------------------*/
@@ -166,4 +173,12 @@ john-contact-info-area
 
 .john-single-contact-img i {
     background-color: var(--primary-color);
+}
+
+/* -----------------------------------------------------
+john-service-area
+--------------------------------------------------------*/
+
+.john-section-heading h2 {
+    font-size: 100px;
 }
