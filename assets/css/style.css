@@ -36,7 +36,7 @@
     font-display: swap;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, h3, h4, h5, a {
     text-transform: uppercase;
     font-family: ITC Avant Garde Gothic Std;
     font-weight: bold;
@@ -175,10 +175,28 @@ john-contact-info-area
     background-color: var(--primary-color);
 }
 
+
 /* -----------------------------------------------------
-john-service-area
+john-footer-area
 --------------------------------------------------------*/
 
-.john-section-heading h2 {
-    font-size: 100px;
+.john-footer-area {
+    background-image: url(../img/Creative-One-Page-Portfolio-Website-Template-Free-PSD.png);
+}
+
+.back-c {
+    background-color: var(--primary-color);
+}
+
+
+
+#T {
+    width: 80%;
+    height: 80px;
+    
+}
+
+#M {
+    width: 100%;
+    height: 200px;
 }
