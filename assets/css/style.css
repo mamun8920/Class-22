@@ -1,55 +1,21 @@
-@font-face {
-    font-family: 'ITC Avant Garde Gothic';
-    src: url('../fonts/AvantGardeCE-Demi.eot');
-    src: url('../fonts/AvantGardeCE-Demi.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AvantGardeCE-Demi.woff2') format('woff2'),
-        url('../fonts/AvantGardeCE-Demi.woff') format('woff'),
-        url('../fonts/AvantGardeCE-Demi.ttf') format('truetype'),
-        url('../fonts/AvantGardeCE-Demi.svg#AvantGardeCE-Demi') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'ITC Avant Garde Gothic Std';
-    src: url('../fonts/ITCAvantGardeStd-Bold.eot');
-    src: url('ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ITCAvantGardeStd-Bold.woff2') format('woff2'),
-        url('../fonts/ITCAvantGardeStd-Bold.woff') format('woff'),
-        url('../fonts/ITCAvantGardeStd-Bold.ttf') format('truetype'),
-        url('../fonts/ITCAvantGardeStd-Bold.svg#ITCAvantGardeStd-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AvantGarde-Book';
-    src: url('../fonts/AvantGarde-Book.eot');
-    src: url('../fonts/AvantGarde-Book.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AvantGarde-Book.woff2') format('woff2'),
-        url('../fonts/AvantGarde-Book.woff') format('woff'),
-        url('../fonts/AvantGarde-Book.ttf') format('truetype'),
-        url('../fonts/AvantGarde-Book.svg#AvantGarde-Book') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5{
     text-transform: uppercase;
-    font-family: ITC Avant Garde Gothic Std;
-    font-weight: bold;
+    font-family: 'ITC Avant Garde Gothic';    
 }
 
 a {
     text-transform: uppercase;    
 }
 
+.fs-18 {
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
 body {
     font-family: AvantGarde-Book;
     color: #494949;
-    font-size: 20px;
+    font-size: 15px;
     line-height:30px; 
     
 }
@@ -91,14 +57,14 @@ header-area
     align-items: center;
 }
 .primary-menu ul li a {
-    font-family: 'ITC Avant Garde Gothic Std';
+    font-family: 'ITC Avant Garde Gothic';
     font-size: 13px;
     margin-right:10px;
 }
 
 .primary-menu ul li a::before {
     content: '-';
-    margin-right:10px;
+    margin-right:30px;
 }
 
 .primary-menu ul li:first-child a::before, .primary-menu ul ul li a::before {
@@ -108,10 +74,6 @@ header-area
 /* -----------------------------------------------------
 john-banner-area 
 --------------------------------------------------------*/
-
-.john-banner-content {
-    font-family: 'ITC Avant Garde Gothic';
-}
 
 .john-banner-area {
     background-image: url(../img/header-pic.jpg);
@@ -125,7 +87,7 @@ gra not working
 --------------------------------------------------------*/
 
 .john-name {    
-    font-size: 154px;
+    font-size: 200px;
 
     /* background: linear-gradient(to right, var(--color1) 0% var(--color2) 100%);
     -webkit-background-clip: text;
@@ -140,14 +102,16 @@ gra not working
 .john-banner-content h2 {    
     font-size: 100px;
     letter-spacing: 50px;
+    margin-top: -40px;
 }
 
 .john-banner-content h3 {    
     letter-spacing: 10px;
+    margin-bottom: -20px;
 }
 
 .john-banner-content p {    
-    letter-spacing: 4px;    
+    letter-spacing: 4px;       
 }
 
 
@@ -164,7 +128,6 @@ john-about-area
 .john-about-center img {
     max-width: 100%;
     height: auto;
-    box-shadow: 9px 0px 25px black;
 }
 
 /* -----------------------------------------------------
@@ -174,6 +137,84 @@ john-contact-info-area
 .john-single-contact-img i {
     background-color: var(--primary-color);
 }
+
+/* -----------------------------------------------------
+john-service-area
+--------------------------------------------------------*/
+.john-section-heading h2 {
+    color: var(--primary-color);
+}
+
+
+/* -----------------------------------------------------
+john-slider-area
+--------------------------------------------------------*/
+
+
+.john-slider-area{
+    background-image: url(../img/2manpic.jpg);
+}
+.single-carousel-right img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.single-carousel-author h5{
+  color: var(--color1);
+}
+
+
+
+
+/* -----------------------------------------------------
+john-Portfolio-area
+--------------------------------------------------------*/
+.john-portfolio-content h2 {
+    color: var(--primary-color);
+}
+
+.prot-color a {
+    color: #4d4d4d;
+}
+
+.prot-color a:hover {
+    color: #a91aef;
+}
+
+/* -----------------------------------------------------
+john-Experience-area
+--------------------------------------------------------*/
+.mamun::after {
+    content: "";
+    background-color: #dcdcde;   
+    width: 14px;
+    height: 62px;
+    position: absolute;
+    top: 15px; 
+    left:340px;
+  }
+
+  .shuvo::before {
+    content: "";
+    background-color: #dcdcde;   
+    width: 14px;
+    height: 62px;
+    position: absolute;
+    top: 15px; 
+    right:340px;
+  }
+
+
+/* -----------------------------------------------------
+john-blog-area
+--------------------------------------------------------*/
+
+.paragarap {
+    width: 360px;
+    text-align: justify;
+}
+
+
 
 
 /* -----------------------------------------------------
