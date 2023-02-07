@@ -153,6 +153,8 @@ john-slider-area
 
 .john-slider-area{
     background-image: url(../img/bg-slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .single-carousel-right img{
     width: 100px;
